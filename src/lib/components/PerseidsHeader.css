@@ -1,0 +1,15 @@
+.perseids-react-components--navbar {
+  height: 72px;
+}
+
+.perseids-react-components--navbar-logo-img {
+  height: 40px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.navbar-light .navbar-text {
+  color: rgba(0, 0, 0, 0.54);
+}
