@@ -15,7 +15,7 @@ const App = () => (
       </div>
     </div>
     <PerseidsFooter
-      twitter={false}
+      twitter=""
       github="https://github.com/perseids-tools/perseids-react-components"
       report="https://github.com/perseids-tools/perseids-react-components/issues"
     />

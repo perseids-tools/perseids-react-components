@@ -15,11 +15,11 @@ const PerseidsHeader = ({ children }) => (
 );
 
 PerseidsHeader.defaultProps = {
-  children: false,
+  children: undefined,
 };
 
 PerseidsHeader.propTypes = {
-  children: PropTypes.element,
+  children: PropTypes.node,
 };
 
 export default PerseidsHeader;

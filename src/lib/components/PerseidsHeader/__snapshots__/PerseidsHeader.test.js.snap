@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`can render children between copyright notice and icons 1`] = `
+<header
+  className="navbar navbar-expand-md navbar-light bg-light perseids-react-components--navbar"
+>
+  <a
+    className="navbar-brand"
+    href="https://www.perseids.org"
+  >
+    <img
+      alt="perseids logo"
+      className="perseids-react-components--navbar-logo-img"
+      src="perseids-logo-transparent.png"
+      title="perseids logo"
+    />
+  </a>
+  Header text
+</header>
+`;
+
+exports[`renders with a link to perseids.org 1`] = `
+<header
+  className="navbar navbar-expand-md navbar-light bg-light perseids-react-components--navbar"
+>
+  <a
+    className="navbar-brand"
+    href="https://www.perseids.org"
+  >
+    <img
+      alt="perseids logo"
+      className="perseids-react-components--navbar-logo-img"
+      src="perseids-logo-transparent.png"
+      title="perseids logo"
+    />
+  </a>
+</header>
+`;

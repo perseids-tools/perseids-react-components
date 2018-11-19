@@ -38,28 +38,26 @@ const PerseidsFooter = ({
       {children}
 
       <ul className="navbar-nav my-2 my-lg-02 flex-row">
-        {report && renderOcticon(report, reportIcon, 'Report Issue', 'Report Icon')}
-        {github && renderOcticon(github, githubIcon, 'View Source on Github', 'GitHub Icon')}
-        {twitter && renderTwitter(twitter)}
+        {!!report && renderOcticon(report, reportIcon, 'Report Issue', 'Report Icon')}
+        {!!github && renderOcticon(github, githubIcon, 'View Source on Github', 'GitHub Icon')}
+        {!!twitter && renderTwitter(twitter)}
       </ul>
     </nav>
   </footer>
 );
 
 PerseidsFooter.defaultProps = {
-  children: false,
+  children: undefined,
   github: 'https://github.com/perseids-project',
-  report: false,
+  report: '',
   twitter: 'https://twitter.com/PerseidsProject',
 };
 
-const iconType = PropTypes.oneOfType([false, PropTypes.string]);
-
 PerseidsFooter.propTypes = {
-  children: PropTypes.element,
-  github: iconType,
-  report: iconType,
-  twitter: iconType,
+  children: PropTypes.node,
+  github: PropTypes.string,
+  report: PropTypes.string,
+  twitter: PropTypes.string,
 };
 
 export default PerseidsFooter;

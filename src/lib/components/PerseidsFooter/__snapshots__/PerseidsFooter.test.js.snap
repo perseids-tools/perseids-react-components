@@ -1,0 +1,220 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`can not render GitHub and Twitter links 1`] = `
+<footer
+  className="footer perseids-react-components--footer"
+>
+  <nav
+    className="navbar navbar-light bg-light py-0 perseids-react-components--footer-nav"
+  >
+    <span
+      className="navbar-text"
+    >
+      © The Perseids Project 2018
+    </span>
+    <ul
+      className="navbar-nav my-2 my-lg-02 flex-row"
+    />
+  </nav>
+</footer>
+`;
+
+exports[`can render children between copyright notice and icons 1`] = `
+<footer
+  className="footer perseids-react-components--footer"
+>
+  <nav
+    className="navbar navbar-light bg-light py-0 perseids-react-components--footer-nav"
+  >
+    <span
+      className="navbar-text"
+    >
+      © The Perseids Project 2018
+    </span>
+    Footer text
+    <ul
+      className="navbar-nav my-2 my-lg-02 flex-row"
+    >
+      <li
+        className="nav-item"
+      >
+        <a
+          className="nav-link p-2"
+          href="https://github.com/perseids-project"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <img
+            alt="GitHub Icon"
+            className="perseids-react-components--octicon"
+            src="mark-github.svg"
+            title="View Source on Github"
+          />
+        </a>
+      </li>
+      <li
+        className="nav-item"
+      >
+        <a
+          className="nav-link p-2"
+          href="https://twitter.com/PerseidsProject"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <img
+            alt="Twitter Icon"
+            className="perseids-react-components--twitter"
+            src="twitter.svg"
+            title="Twitter"
+          />
+        </a>
+      </li>
+    </ul>
+  </nav>
+</footer>
+`;
+
+exports[`can render report link 1`] = `
+<footer
+  className="footer perseids-react-components--footer"
+>
+  <nav
+    className="navbar navbar-light bg-light py-0 perseids-react-components--footer-nav"
+  >
+    <span
+      className="navbar-text"
+    >
+      © The Perseids Project 2018
+    </span>
+    <ul
+      className="navbar-nav my-2 my-lg-02 flex-row"
+    >
+      <li
+        className="nav-item"
+      >
+        <a
+          className="nav-link p-2"
+          href="https://example.com/github"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <img
+            alt="Report Icon"
+            className="perseids-react-components--octicon"
+            src="report.svg"
+            title="Report Issue"
+          />
+        </a>
+      </li>
+    </ul>
+  </nav>
+</footer>
+`;
+
+exports[`renders custom GitHub and Twitter links 1`] = `
+<footer
+  className="footer perseids-react-components--footer"
+>
+  <nav
+    className="navbar navbar-light bg-light py-0 perseids-react-components--footer-nav"
+  >
+    <span
+      className="navbar-text"
+    >
+      © The Perseids Project 2018
+    </span>
+    <ul
+      className="navbar-nav my-2 my-lg-02 flex-row"
+    >
+      <li
+        className="nav-item"
+      >
+        <a
+          className="nav-link p-2"
+          href="https://example.com/github"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <img
+            alt="GitHub Icon"
+            className="perseids-react-components--octicon"
+            src="mark-github.svg"
+            title="View Source on Github"
+          />
+        </a>
+      </li>
+      <li
+        className="nav-item"
+      >
+        <a
+          className="nav-link p-2"
+          href="https://example.com/twitter"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <img
+            alt="Twitter Icon"
+            className="perseids-react-components--twitter"
+            src="twitter.svg"
+            title="Twitter"
+          />
+        </a>
+      </li>
+    </ul>
+  </nav>
+</footer>
+`;
+
+exports[`renders with copyright text and default GitHub and Twitter links 1`] = `
+<footer
+  className="footer perseids-react-components--footer"
+>
+  <nav
+    className="navbar navbar-light bg-light py-0 perseids-react-components--footer-nav"
+  >
+    <span
+      className="navbar-text"
+    >
+      © The Perseids Project 2018
+    </span>
+    <ul
+      className="navbar-nav my-2 my-lg-02 flex-row"
+    >
+      <li
+        className="nav-item"
+      >
+        <a
+          className="nav-link p-2"
+          href="https://github.com/perseids-project"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <img
+            alt="GitHub Icon"
+            className="perseids-react-components--octicon"
+            src="mark-github.svg"
+            title="View Source on Github"
+          />
+        </a>
+      </li>
+      <li
+        className="nav-item"
+      >
+        <a
+          className="nav-link p-2"
+          href="https://twitter.com/PerseidsProject"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <img
+            alt="Twitter Icon"
+            className="perseids-react-components--twitter"
+            src="twitter.svg"
+            title="Twitter"
+          />
+        </a>
+      </li>
+    </ul>
+  </nav>
+</footer>
+`;
