@@ -2,7 +2,7 @@ import React from 'react';
 
 import './PerseidsHeader.css';
 
-import perseidsLogoTransparent from '../img/perseids-logo-transparent.png';
+import perseidsLogoTransparent from './perseids-logo-transparent.png';
 
 const PerseidsHeader = (props) => (
   <header className="navbar navbar-expand-md navbar-light bg-light perseids-react-components--navbar">

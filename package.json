@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/perseids-project/perseids-react-components",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "octicons": "^8.1.3"
+  },
   "devDependencies": {
     "autoprefixer": "7.1.6",
     "babel-core": "6.26.0",
@@ -27,7 +29,6 @@
     "babel-loader": "7.1.2",
     "babel-preset-react-app": "^3.1.0",
     "babel-runtime": "6.26.0",
-    "bootstrap": "^4.1.2",
     "case-sensitive-paths-webpack-plugin": "2.1.1",
     "chalk": "1.1.3",
     "copy-webpack-plugin": "^4.3.1",
@@ -62,6 +63,7 @@
     "whatwg-fetch": "2.0.3"
   },
   "peerDependencies": {
+    "bootstrap": "^4.1.2",
     "react": ">=0.14",
     "react-dom": ">=0.14"
   },

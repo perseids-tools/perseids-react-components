@@ -1,0 +1,23 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.perseids-react-components--footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 62px;
+}
+
+.perseids-react-components--footer-nav {
+  height: 100%;
+}
+
+.perseids-react-components--twitter {
+  height: 30px;
+}
+
+.perseids-react-components--octicon {
+  height: 24px;
+}

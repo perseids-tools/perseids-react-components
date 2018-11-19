@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { PerseidsHeader } from '../lib';
+import { PerseidsHeader, PerseidsFooter } from '../lib';
 
 const App = () => (
   <div>
@@ -14,6 +14,11 @@ const App = () => (
         </h1>
       </div>
     </div>
+    <PerseidsFooter
+      twitter={false}
+      github="https://github.com/perseids-tools/perseids-react-components"
+      report="https://github.com/perseids-tools/perseids-react-components/issues"
+    />
   </div>
 );
 
