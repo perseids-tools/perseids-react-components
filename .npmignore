@@ -22,5 +22,8 @@ scripts
 config
 demo
 .travis.yml
+.ackrc
+.eslintignore
+.eslintrc.json
 CHANGELOG.md
 README.md
