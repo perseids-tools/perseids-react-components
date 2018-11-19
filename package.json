@@ -12,12 +12,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/perseids-project/perseids-react-components.git"
+    "url": "git+https://github.com/perseids-tools/perseids-react-components.git"
   },
   "bugs": {
-    "url": "https://github.com/perseids-project/perseids-react-components/issues"
+    "url": "https://github.com/perseids-tools/perseids-react-components/issues"
   },
-  "homepage": "https://github.com/perseids-project/perseids-react-components",
+  "homepage": "https://github.com/perseids-tools/perseids-react-components",
   "license": "MIT",
   "dependencies": {
     "octicons": "^8.1.3"

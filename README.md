@@ -1,64 +1,104 @@
-# React NPM library starter kit
+# Perseids React Components
 
-[![Build Status](https://travis-ci.org/DimiMikadze/create-react-library.svg?branch=master)](https://travis-ci.org/DimiMikadze/create-react-library)
-[![Dependencies](https://img.shields.io/david/DimiMikadze/create-react-library.svg)]()
-[![Dev Dependencies](https://img.shields.io/david/dev/DimiMikadze/create-react-library.svg)]()
+This library contains React components that are shared across several Perseids Project applications.
+It is build on top of [DimiMikadze/create-react-library](https://github.com/DimiMikadze/create-react-library).
 
-based on Facebook's <a href="https://github.com/facebookincubator/create-react-app" target="_blank">Create react app</a>.
-We are constantly updating repository with the updates of `create-react-app`, so we have all new features and bug fixes of it.
+## Installation
 
-## Converted to custom setup
+`yarn add perseids-react-components`
 
-Moved all dependencies to dev dependencies because we don't need extra dependencies for our library after build, but we want all this features while developing: 
+Note that this package requires the following peer dependencies:
 
-* React, JSX, ES6, and Flow syntax support.
-* Language extras beyond ES6 like the object spread operator.
-* A dev server that lints for common errors.
-* Import CSS and image files directly from JavaScript.
-* Autoprefixed CSS, so you don’t need `-webkit` or other prefixes.
-* A `build` script to bundle JS, CSS, and images for production.
+```json
+{
+  "bootstrap": "^4.1.2",
+  "prop-types": "^15.6.2",
+  "react": "^16.2.0",
+  "react-dom": "^16.2.0"
+}
+```
 
-## Getting Started
+## Usage
 
-Clone repo
+```jsx
+import React from 'react';
 
-````
-git clone https://github.com/DimiMikadze/create-react-library.git
-````
+import { PerseidsHeader, PerseidsFooter } from 'perseids-react-components';
+import 'perseids-react-components/build/css/index.css';
 
-Install dependencies
+const App = () => (
+  <div>
+    <PerseidsHeader />
+    Content
+    <PerseidsFooter />
+  </div>
+);
+```
 
-`npm install` or `yarn install`
+## Development
 
-Start development server
+### Installation
 
-`npm start` or `yarn start`
+`yarn install`
 
-Runs the demo app in development mode.
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Running tests
 
-## Library files
+`yarn test`
 
-All library files are located inside `src/lib`  
+### Running demo application
 
-## Demo app
+`yarn start`
 
-Is located inside `src/demo` directory, here you can test your library while developing
+### Building
 
-## Testing
+`yarn build`
 
-`npm run test` or `yarn run test`
-
-## Build library
-
-`npm run build` or `yarn run build`
-
-Produces production version of library under the `build` folder.
-
-## Publish library
+### Publishing
 
 `npm publish`
 
-## Example library built with this starter kit
+(Make sure to update the `version` in `package.json` before publishing a new release.)
 
-https://github.com/DimiMikadze/react-under-construction
+## Examples
+
+### PerseidsHeader
+
+#### Default (link to perseids.org)
+
+```jsx
+<PerseidsHeader />
+```
+
+#### With custom content
+
+```jsx
+<PerseidsHeader>
+  Header text
+</PerseidsHeader>
+```
+
+### PerseidsFooter
+
+#### Default (copyright notice, GitHub, and Twitter links)
+
+```jsx
+<PerseidsFooter />
+```
+
+#### With custom content
+
+```jsx
+<PerseidsFooter>
+  Footer text
+</PerseidsFooter>
+```
+
+#### With report link, custom GitHub link, and no Twitter link
+
+```jsx
+<PerseidsFooter
+  github="https://github.com/perseids-tools/perseids-react-components"
+  report="https://github.com/perseids-tools/perseids-react-components/issues"
+  twitter=""
+/>
+```
