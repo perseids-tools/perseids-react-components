@@ -1,5 +1,10 @@
 language: node_js
 node_js:
- - "node"
+  - v10.5.0
+cache:
+  directories:
+  - node_modules
 script:
- - npm run test
+  - yarn install
+  - yarn lint
+  - yarn test --coverage
