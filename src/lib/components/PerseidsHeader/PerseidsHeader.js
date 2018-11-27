@@ -7,7 +7,7 @@ import perseidsLogoTransparent from './perseids-logo-transparent.png';
 
 const PerseidsHeader = ({ children }) => (
   <header className="navbar navbar-expand-md navbar-light bg-light perseids-react-components--navbar">
-    <a className="navbar-brand" href="https://www.perseids.org">
+    <a className="navbar-brand perseids-react-components--navbar-brand" href="https://www.perseids.org">
       <img className="perseids-react-components--navbar-logo-img" src={perseidsLogoTransparent} title="perseids logo" alt="perseids logo" />
     </a>
     {children}
