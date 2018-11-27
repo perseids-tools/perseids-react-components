@@ -57,7 +57,10 @@ const App = () => (
 
 ### Publishing
 
-`npm publish`
+```
+yarn build
+npm publish
+```
 
 (Make sure to update the `version` in `package.json` before publishing a new release.)
 
