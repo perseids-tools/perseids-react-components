@@ -18,6 +18,8 @@ Note that this package requires the following peer dependencies:
 }
 ```
 
+(See project on [npm](https://www.npmjs.com/package/perseids-react-components))
+
 ## Usage
 
 ```jsx
