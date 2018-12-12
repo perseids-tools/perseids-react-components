@@ -1,17 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`can not render GitHub and Twitter links 1`] = `
+exports[`can not render copyright notice and GitHub and Twitter links 1`] = `
 <footer
   className="footer perseids-react-components--footer"
 >
   <nav
     className="navbar navbar-light bg-light py-0 perseids-react-components--footer-nav"
   >
-    <span
-      className="navbar-text"
-    >
-      © The Perseids Project 2018
-    </span>
     <ul
       className="navbar-nav my-2 my-lg-02 flex-row"
     />
@@ -111,7 +106,7 @@ exports[`can render report link 1`] = `
 </footer>
 `;
 
-exports[`renders custom GitHub and Twitter links 1`] = `
+exports[`renders custom copyright notice and  GitHub and Twitter links 1`] = `
 <footer
   className="footer perseids-react-components--footer"
 >
@@ -121,7 +116,7 @@ exports[`renders custom GitHub and Twitter links 1`] = `
     <span
       className="navbar-text"
     >
-      © The Perseids Project 2018
+      © Example
     </span>
     <ul
       className="navbar-nav my-2 my-lg-02 flex-row"

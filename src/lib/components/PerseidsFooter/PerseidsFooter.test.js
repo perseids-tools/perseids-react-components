@@ -9,18 +9,22 @@ it('renders with copyright text and default GitHub and Twitter links', () => {
   expect(tree).toMatchSnapshot();
 });
 
-it('renders custom GitHub and Twitter links', () => {
+it('renders custom copyright notice and  GitHub and Twitter links', () => {
   const component = (
-    <PerseidsFooter github="https://example.com/github" twitter="https://example.com/twitter" />
+    <PerseidsFooter
+      copyright="© Example"
+      github="https://example.com/github"
+      twitter="https://example.com/twitter"
+    />
   );
   const tree = renderer.create(component).toJSON();
 
   expect(tree).toMatchSnapshot();
 });
 
-it('can not render GitHub and Twitter links', () => {
+it('can not render copyright notice and GitHub and Twitter links', () => {
   const component = (
-    <PerseidsFooter github="" twitter="" />
+    <PerseidsFooter copyright="" github="" twitter="" />
   );
   const tree = renderer.create(component).toJSON();
 

@@ -7,6 +7,12 @@ import githubIcon from 'octicons/build/svg/mark-github.svg';
 import reportIcon from 'octicons/build/svg/report.svg';
 import twitterIcon from './twitter.svg';
 
+const renderCopyright = text => (
+  <span className="navbar-text">
+    {text}
+  </span>
+);
+
 const renderOcticon = (href, img, title, alt) => (
   <li className="nav-item">
     <a className="nav-link p-2" href={href} target="_blank" rel="noopener noreferrer">
@@ -25,15 +31,14 @@ const renderTwitter = href => (
 
 const PerseidsFooter = ({
   children,
+  copyright,
   github,
   report,
   twitter,
 }) => (
   <footer className="footer perseids-react-components--footer">
     <nav className="navbar navbar-light bg-light py-0 perseids-react-components--footer-nav">
-      <span className="navbar-text">
-        © The Perseids Project 2018
-      </span>
+      {!!copyright && renderCopyright(copyright)}
 
       {children}
 
@@ -48,6 +53,7 @@ const PerseidsFooter = ({
 
 PerseidsFooter.defaultProps = {
   children: undefined,
+  copyright: '© The Perseids Project 2018',
   github: 'https://github.com/perseids-project',
   report: '',
   twitter: 'https://twitter.com/PerseidsProject',
@@ -55,6 +61,7 @@ PerseidsFooter.defaultProps = {
 
 PerseidsFooter.propTypes = {
   children: PropTypes.node,
+  copyright: PropTypes.string,
   github: PropTypes.string,
   report: PropTypes.string,
   twitter: PropTypes.string,
