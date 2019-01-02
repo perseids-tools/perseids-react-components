@@ -24,7 +24,7 @@ exports[`can render children between copyright notice and icons 1`] = `
     <span
       className="navbar-text"
     >
-      © The Perseids Project 2018
+      © The Perseids Project 2019
     </span>
     Footer text
     <ul
@@ -79,7 +79,7 @@ exports[`can render report link 1`] = `
     <span
       className="navbar-text"
     >
-      © The Perseids Project 2018
+      © The Perseids Project 2019
     </span>
     <ul
       className="navbar-nav my-2 my-lg-02 flex-row"
@@ -170,7 +170,7 @@ exports[`renders with copyright text and default GitHub and Twitter links 1`] = 
     <span
       className="navbar-text"
     >
-      © The Perseids Project 2018
+      © The Perseids Project 2019
     </span>
     <ul
       className="navbar-nav my-2 my-lg-02 flex-row"
