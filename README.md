@@ -107,3 +107,13 @@ npm publish
   twitter=""
 />
 ```
+
+## Upgrading Notes
+
+To upgrade to the latest version of `create-react-library`:
+
+* In `package.json`, everything above `devDependencies` should not be updated,
+  but everything below it should be replaced by the new versions in `create-react-library`.
+* Run `yarn add --dev bootstrap prop-types eslint-config-airbnb eslint-plugin-jest react-test-renderer`
+* All of the files in `./scripts` should be replaced with new versions in `create-react-library`.
+* All of the files in `./config` should be replaced with new versions in `create-react-library`.
