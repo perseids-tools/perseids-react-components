@@ -2,7 +2,7 @@
 
 exports[`can render children between copyright notice and icons 1`] = `
 <header
-  className="navbar navbar-expand-md navbar-light bg-light"
+  className="navbar navbar-expand-md navbar-light bg-light perseids-react-components--navbar"
 >
   <a
     className="navbar-brand perseids-react-components--navbar-brand"
@@ -21,7 +21,7 @@ exports[`can render children between copyright notice and icons 1`] = `
 
 exports[`renders with a link to perseids.org 1`] = `
 <header
-  className="navbar navbar-expand-md navbar-light bg-light"
+  className="navbar navbar-expand-md navbar-light bg-light perseids-react-components--navbar"
 >
   <a
     className="navbar-brand perseids-react-components--navbar-brand"
