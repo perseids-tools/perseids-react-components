@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{11:function(t,i,n){},3:function(t,i,n){t.exports=n.p+"static/media/mark-github.207687a1.svg"},4:function(t,i,n){t.exports=n.p+"static/media/report.9d8783cd.svg"}}]);
-//# sourceMappingURL=1.index.js.map

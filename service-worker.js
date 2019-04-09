@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/perseids-react-components/precache-manifest.1757348582ea98090ab3f0de4d5e2498.js"
+  "/perseids-react-components/precache-manifest.1aa9000615ba6ac48ada53f273bd4ed5.js"
 );
 
 workbox.clientsClaim();
