@@ -1,7 +1,10 @@
 # Perseids React Components
 
 This library contains React components that are shared across several Perseids Project applications.
-It is build on top of [DimiMikadze/create-react-library](https://github.com/DimiMikadze/create-react-library).
+
+## Demo
+
+[https://perseids-tools.github.io/perseids-react-components/](https://perseids-tools.github.io/perseids-react-components/)
 
 ## Installation
 
@@ -110,6 +113,7 @@ npm publish
 
 ## Upgrading Notes
 
+This library is build on top of [DimiMikadze/create-react-library](https://github.com/DimiMikadze/create-react-library).
 To upgrade to the latest version of `create-react-library`:
 
 * In `package.json`, everything above `devDependencies` should not be updated,
