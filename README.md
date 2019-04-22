@@ -15,7 +15,6 @@ Note that this package requires the following peer dependencies:
 ```json
 {
   "bootstrap": "^4.1.2",
-  "prop-types": "^15.6.2",
   "react": "^16.2.0",
   "react-dom": "^16.2.0"
 }
