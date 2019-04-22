@@ -3,6 +3,7 @@
   "version": "0.0.12",
   "description": "React components shared between Perseids applications",
   "main": "build/index.js",
+  "keywords": ["perseids"],
   "scripts": {
     "start": "node scripts/start.js",
     "deploy": "gh-pages -d demo",
