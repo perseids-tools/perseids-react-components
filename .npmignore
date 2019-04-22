@@ -25,5 +25,5 @@ demo
 .ackrc
 .eslintignore
 .eslintrc.json
-CHANGELOG.md
-README.md
+.tool-versions
+yarn.lock
