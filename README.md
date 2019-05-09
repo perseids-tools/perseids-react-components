@@ -84,6 +84,12 @@ npm publish
 </PerseidsHeader>
 ```
 
+#### With custom link component
+
+```jsx
+<PerseidsHeader component={Link} props={{ to: '/foo' }} />
+```
+
 ### PerseidsFooter
 
 #### Default (copyright notice, GitHub, and Twitter links)

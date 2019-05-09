@@ -1,5 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`can render a custom component 1`] = `
+<header
+  className="navbar navbar-expand-md navbar-light bg-light perseids-react-components--navbar"
+>
+  <span
+    className="navbar-brand perseids-react-components--navbar-brand"
+    name="test"
+  >
+    <img
+      alt="perseids logo"
+      className="perseids-react-components--navbar-logo-img"
+      src="perseids-logo-transparent.png"
+      title="perseids logo"
+    />
+  </span>
+</header>
+`;
+
+exports[`can render a different element 1`] = `
+<header
+  className="navbar navbar-expand-md navbar-light bg-light perseids-react-components--navbar"
+>
+  <div
+    className="navbar-brand perseids-react-components--navbar-brand"
+    href="https://www.perseids.org"
+  >
+    <img
+      alt="perseids logo"
+      className="perseids-react-components--navbar-logo-img"
+      src="perseids-logo-transparent.png"
+      title="perseids logo"
+    />
+  </div>
+</header>
+`;
+
 exports[`can render children between copyright notice and icons 1`] = `
 <header
   className="navbar navbar-expand-md navbar-light bg-light perseids-react-components--navbar"
