@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "f9fbd42e08c8c4b72e6c",
+    "revision": "b10c33396d0da23f700a",
     "url": "/perseids-react-components/static/css/main.488dbaaf.chunk.css"
   },
   {
-    "revision": "f9fbd42e08c8c4b72e6c",
-    "url": "/perseids-react-components/static/js/main.f9fbd42e.chunk.js"
+    "revision": "b10c33396d0da23f700a",
+    "url": "/perseids-react-components/static/js/main.b10c3339.chunk.js"
   },
   {
     "revision": "58559895c5a8f17a46f3",
@@ -36,7 +36,7 @@ self.__precacheManifest = [
     "url": "/perseids-react-components/static/media/twitter.2ac2d65c.svg"
   },
   {
-    "revision": "0f1636bcc129cc1becf32855b9eb1687",
+    "revision": "80ee57a513f70ae390b5cfb36a880a4d",
     "url": "/perseids-react-components/index.html"
   }
 ];
