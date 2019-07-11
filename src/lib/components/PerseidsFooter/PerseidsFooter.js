@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 import './PerseidsFooter.css';
 
-import githubIcon from 'octicons/build/svg/mark-github.svg';
-import reportIcon from 'octicons/build/svg/report.svg';
+import githubIcon from '@primer/octicons/build/svg/mark-github.svg';
+import reportIcon from '@primer/octicons/build/svg/report.svg';
 import twitterIcon from './twitter.svg';
 
 const renderCopyright = text => (
