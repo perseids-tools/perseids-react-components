@@ -1,14 +1,25 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import {
+  func,
+  node,
+  object,
+  oneOfType,
+  string,
+} from 'prop-types';
 
 import './PerseidsHeader.css';
 
 import perseidsLogoTransparent from './perseids-logo-transparent.png';
 
-const PerseidsHeader = ({ children, component: Component, props }) => (
+const PerseidsHeader = ({
+  children,
+  component: Component,
+  logo,
+  props,
+}) => (
   <header className="navbar navbar-expand-md navbar-light bg-light perseids-react-components--navbar">
     <Component className="navbar-brand perseids-react-components--navbar-brand" {...props}>
-      <img className="perseids-react-components--navbar-logo-img" src={perseidsLogoTransparent} title="perseids logo" alt="perseids logo" />
+      {logo && <img className="perseids-react-components--navbar-logo-img" src={logo} title="perseids logo" alt="perseids logo" />}
     </Component>
     {children}
   </header>
@@ -17,14 +28,16 @@ const PerseidsHeader = ({ children, component: Component, props }) => (
 PerseidsHeader.defaultProps = {
   children: undefined,
   component: 'a',
+  logo: perseidsLogoTransparent,
   props: { href: 'https://www.perseids.org' },
 };
 
 PerseidsHeader.propTypes = {
-  children: PropTypes.node,
-  component: PropTypes.oneOfType([PropTypes.string, PropTypes.func]),
+  children: node,
+  component: oneOfType([string, func]),
+  logo: string,
   // eslint-disable-next-line react/forbid-prop-types
-  props: PropTypes.object,
+  props: object,
 };
 
 export default PerseidsHeader;

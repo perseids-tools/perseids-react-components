@@ -34,6 +34,26 @@ it('can render a custom component', () => {
   expect(tree).toMatchSnapshot();
 });
 
+it('can render a custom logo', () => {
+  const component = (
+    <PerseidsHeader logo="some-image.png" />
+  );
+
+  const tree = renderer.create(component).toJSON();
+
+  expect(tree).toMatchSnapshot();
+});
+
+it('can render without a logo', () => {
+  const component = (
+    <PerseidsHeader logo={null} />
+  );
+
+  const tree = renderer.create(component).toJSON();
+
+  expect(tree).toMatchSnapshot();
+});
+
 it('can render children between copyright notice and icons', () => {
   const component = (
     <PerseidsHeader>
