@@ -7,7 +7,7 @@ import githubIcon from '@primer/octicons/build/svg/mark-github.svg';
 import reportIcon from '@primer/octicons/build/svg/report.svg';
 import twitterIcon from './twitter.svg';
 
-const renderCopyright = text => (
+const renderCopyright = (text) => (
   <span className="navbar-text">
     {text}
   </span>
@@ -21,7 +21,7 @@ const renderOcticon = (href, img, title, alt) => (
   </li>
 );
 
-const renderTwitter = href => (
+const renderTwitter = (href) => (
   <li className="nav-item">
     <a className="nav-link p-2" href={href} target="_blank" rel="noopener noreferrer">
       <img className="perseids-react-components--twitter" src={twitterIcon} title="Twitter" alt="Twitter Icon" />
