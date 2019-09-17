@@ -84,6 +84,18 @@ npm publish
 </PerseidsHeader>
 ```
 
+#### With custom logo
+
+```jsx
+<PerseidsHeader logo="/images/some-image.png" />
+```
+
+#### With no logo
+
+```jsx
+<PerseidsHeader logo={null} />
+```
+
 #### With custom link component
 
 ```jsx
