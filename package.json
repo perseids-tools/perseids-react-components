@@ -1,6 +1,6 @@
 {
   "name": "perseids-react-components",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "React components shared between Perseids applications",
   "main": "build/index.js",
   "keywords": [
