@@ -53,7 +53,7 @@ const PerseidsFooter = ({
 
 PerseidsFooter.defaultProps = {
   children: undefined,
-  copyright: '© The Perseids Project 2019',
+  copyright: '© The Perseids Project 2020',
   github: 'https://github.com/perseids-project',
   report: '',
   twitter: 'https://twitter.com/PerseidsProject',
