@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/perseids-react-components/precache-manifest.87c3e2f81f81cc615334dc31bf6e12a7.js"
+  "/perseids-react-components/precache-manifest.8e44128847726248902cf6d066e27f6f.js"
 );
 
 self.addEventListener('message', (event) => {
