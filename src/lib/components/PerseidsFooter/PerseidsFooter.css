@@ -15,6 +15,10 @@ html {
   height: 100%;
 }
 
+.perseids-react-components--doi {
+  height: 30px;
+}
+
 .perseids-react-components--twitter {
   height: 30px;
 }

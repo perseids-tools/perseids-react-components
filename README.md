@@ -118,12 +118,13 @@ npm publish
 </PerseidsFooter>
 ```
 
-#### With report link, custom GitHub link, and no Twitter link
+#### With report link, custom GitHub link, DOI link, and no Twitter link
 
 ```jsx
 <PerseidsFooter
   github="https://github.com/perseids-tools/perseids-react-components"
   report="https://github.com/perseids-tools/perseids-react-components/issues"
+  doi="https://doi.org/example"
   twitter=""
 />
 ```

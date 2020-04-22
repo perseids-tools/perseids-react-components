@@ -6,6 +6,7 @@ import './PerseidsFooter.css';
 import githubIcon from '@primer/octicons/build/svg/mark-github.svg';
 import reportIcon from '@primer/octicons/build/svg/report.svg';
 import twitterIcon from './twitter.svg';
+import doiIcon from './doi.svg';
 
 const renderCopyright = (text) => (
   <span className="navbar-text">
@@ -21,6 +22,14 @@ const renderOcticon = (href, img, title, alt) => (
   </li>
 );
 
+const renderDoi = (href) => (
+  <li className="nav-item">
+    <a className="nav-link p-2" href={href} target="_blank" rel="noopener noreferrer">
+      <img className="perseids-react-components--doi" src={doiIcon} title="Digital Object Identifier" alt="DOI Icon" />
+    </a>
+  </li>
+);
+
 const renderTwitter = (href) => (
   <li className="nav-item">
     <a className="nav-link p-2" href={href} target="_blank" rel="noopener noreferrer">
@@ -32,8 +41,9 @@ const renderTwitter = (href) => (
 const PerseidsFooter = ({
   children,
   copyright,
-  github,
+  doi,
   report,
+  github,
   twitter,
 }) => (
   <footer className="footer perseids-react-components--footer">
@@ -43,6 +53,7 @@ const PerseidsFooter = ({
       {children}
 
       <ul className="navbar-nav my-2 my-lg-02 flex-row">
+        {!!doi && renderDoi(doi)}
         {!!report && renderOcticon(report, reportIcon, 'Report Issue', 'Report Icon')}
         {!!github && renderOcticon(github, githubIcon, 'View Source on Github', 'GitHub Icon')}
         {!!twitter && renderTwitter(twitter)}
@@ -54,16 +65,18 @@ const PerseidsFooter = ({
 PerseidsFooter.defaultProps = {
   children: undefined,
   copyright: '© The Perseids Project 2020',
-  github: 'https://github.com/perseids-project',
+  doi: '',
   report: '',
+  github: 'https://github.com/perseids-project',
   twitter: 'https://twitter.com/PerseidsProject',
 };
 
 PerseidsFooter.propTypes = {
   children: PropTypes.node,
   copyright: PropTypes.string,
-  github: PropTypes.string,
+  doi: PropTypes.string,
   report: PropTypes.string,
+  github: PropTypes.string,
   twitter: PropTypes.string,
 };
 

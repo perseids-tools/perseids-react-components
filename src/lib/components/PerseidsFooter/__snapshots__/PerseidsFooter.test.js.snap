@@ -14,6 +14,43 @@ exports[`can not render copyright notice and GitHub and Twitter links 1`] = `
 </footer>
 `;
 
+exports[`can render DOI link 1`] = `
+<footer
+  className="footer perseids-react-components--footer"
+>
+  <nav
+    className="navbar navbar-light bg-light py-0 perseids-react-components--footer-nav"
+  >
+    <span
+      className="navbar-text"
+    >
+      © The Perseids Project 2020
+    </span>
+    <ul
+      className="navbar-nav my-2 my-lg-02 flex-row"
+    >
+      <li
+        className="nav-item"
+      >
+        <a
+          className="nav-link p-2"
+          href="https://example.com/doi"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <img
+            alt="DOI Icon"
+            className="perseids-react-components--doi"
+            src="doi.svg"
+            title="Digital Object Identifier"
+          />
+        </a>
+      </li>
+    </ul>
+  </nav>
+</footer>
+`;
+
 exports[`can render children between copyright notice and icons 1`] = `
 <footer
   className="footer perseids-react-components--footer"
@@ -89,7 +126,7 @@ exports[`can render report link 1`] = `
       >
         <a
           className="nav-link p-2"
-          href="https://example.com/github"
+          href="https://example.com/report"
           rel="noopener noreferrer"
           target="_blank"
         >

@@ -33,7 +33,16 @@ it('can not render copyright notice and GitHub and Twitter links', () => {
 
 it('can render report link', () => {
   const component = (
-    <PerseidsFooter github="" twitter="" report="https://example.com/github" />
+    <PerseidsFooter github="" twitter="" report="https://example.com/report" />
+  );
+  const tree = renderer.create(component).toJSON();
+
+  expect(tree).toMatchSnapshot();
+});
+
+it('can render DOI link', () => {
+  const component = (
+    <PerseidsFooter github="" twitter="" doi="https://example.com/doi" />
   );
   const tree = renderer.create(component).toJSON();
 
