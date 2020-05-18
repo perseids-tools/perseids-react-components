@@ -15,7 +15,7 @@ const App = () => (
       </div>
     </div>
     <PerseidsFooter
-      copyright="© The Example Project 2018"
+      copyright="© Example Project"
       github="https://github.com/perseids-tools/perseids-react-components"
       report="https://github.com/perseids-tools/perseids-react-components/issues"
       twitter=""

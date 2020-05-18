@@ -14,25 +14,29 @@ const renderCopyright = (text) => (
   </span>
 );
 
-const renderOcticon = (href, img, title, alt) => (
-  <li className="nav-item">
-    <a className="nav-link p-2" href={href} target="_blank" rel="noopener noreferrer">
-      <img className="perseids-react-components--octicon" src={img} title={title} alt={alt} />
-    </a>
-  </li>
+const iconClass = (hasFollower) => (
+  `nav-link py-2 pl-1 pl-sm-2 ${hasFollower ? 'pr-1 pr-sm-2' : 'pr-0'}`
 );
 
-const renderDoi = (href) => (
+const renderDoi = (href, hasFollower) => (
   <li className="nav-item">
-    <a className="nav-link p-2" href={href} target="_blank" rel="noopener noreferrer">
+    <a className={iconClass(hasFollower)} href={href} target="_blank" rel="noopener noreferrer">
       <img className="perseids-react-components--doi" src={doiIcon} title="Digital Object Identifier" alt="DOI Icon" />
     </a>
   </li>
 );
 
-const renderTwitter = (href) => (
+const renderOcticon = (href, img, title, alt, hasFollower) => (
   <li className="nav-item">
-    <a className="nav-link p-2" href={href} target="_blank" rel="noopener noreferrer">
+    <a className={iconClass(hasFollower)} href={href} target="_blank" rel="noopener noreferrer">
+      <img className="perseids-react-components--octicon" src={img} title={title} alt={alt} />
+    </a>
+  </li>
+);
+
+const renderTwitter = (href, hasFollower) => (
+  <li className="nav-item">
+    <a className={iconClass(hasFollower)} href={href} target="_blank" rel="noopener noreferrer">
       <img className="perseids-react-components--twitter" src={twitterIcon} title="Twitter" alt="Twitter Icon" />
     </a>
   </li>
@@ -53,10 +57,10 @@ const PerseidsFooter = ({
       {children}
 
       <ul className="navbar-nav my-2 my-lg-02 flex-row">
-        {!!doi && renderDoi(doi)}
-        {!!report && renderOcticon(report, reportIcon, 'Report Issue', 'Report Icon')}
-        {!!github && renderOcticon(github, githubIcon, 'View Source on Github', 'GitHub Icon')}
-        {!!twitter && renderTwitter(twitter)}
+        {!!doi && renderDoi(doi, report || github || twitter)}
+        {!!report && renderOcticon(report, reportIcon, 'Report Issue', 'Report Icon', github || twitter)}
+        {!!github && renderOcticon(github, githubIcon, 'View Source on Github', 'GitHub Icon', twitter)}
+        {!!twitter && renderTwitter(twitter, false)}
       </ul>
     </nav>
   </footer>
@@ -64,7 +68,7 @@ const PerseidsFooter = ({
 
 PerseidsFooter.defaultProps = {
   children: undefined,
-  copyright: '© The Perseids Project 2020',
+  copyright: 'The Perseids Project',
   doi: '',
   report: '',
   github: 'https://github.com/perseids-project',

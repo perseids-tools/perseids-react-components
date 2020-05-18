@@ -24,7 +24,7 @@ exports[`can render DOI link 1`] = `
     <span
       className="navbar-text"
     >
-      © The Perseids Project 2020
+      The Perseids Project
     </span>
     <ul
       className="navbar-nav my-2 my-lg-02 flex-row"
@@ -33,7 +33,7 @@ exports[`can render DOI link 1`] = `
         className="nav-item"
       >
         <a
-          className="nav-link p-2"
+          className="nav-link py-2 pl-1 pl-sm-2 pr-0"
           href="https://example.com/doi"
           rel="noopener noreferrer"
           target="_blank"
@@ -61,7 +61,7 @@ exports[`can render children between copyright notice and icons 1`] = `
     <span
       className="navbar-text"
     >
-      © The Perseids Project 2020
+      The Perseids Project
     </span>
     Footer text
     <ul
@@ -71,7 +71,7 @@ exports[`can render children between copyright notice and icons 1`] = `
         className="nav-item"
       >
         <a
-          className="nav-link p-2"
+          className="nav-link py-2 pl-1 pl-sm-2 pr-1 pr-sm-2"
           href="https://github.com/perseids-project"
           rel="noopener noreferrer"
           target="_blank"
@@ -88,7 +88,7 @@ exports[`can render children between copyright notice and icons 1`] = `
         className="nav-item"
       >
         <a
-          className="nav-link p-2"
+          className="nav-link py-2 pl-1 pl-sm-2 pr-0"
           href="https://twitter.com/PerseidsProject"
           rel="noopener noreferrer"
           target="_blank"
@@ -116,7 +116,7 @@ exports[`can render report link 1`] = `
     <span
       className="navbar-text"
     >
-      © The Perseids Project 2020
+      The Perseids Project
     </span>
     <ul
       className="navbar-nav my-2 my-lg-02 flex-row"
@@ -125,7 +125,7 @@ exports[`can render report link 1`] = `
         className="nav-item"
       >
         <a
-          className="nav-link p-2"
+          className="nav-link py-2 pl-1 pl-sm-2 pr-0"
           href="https://example.com/report"
           rel="noopener noreferrer"
           target="_blank"
@@ -162,7 +162,7 @@ exports[`renders custom copyright notice and  GitHub and Twitter links 1`] = `
         className="nav-item"
       >
         <a
-          className="nav-link p-2"
+          className="nav-link py-2 pl-1 pl-sm-2 pr-1 pr-sm-2"
           href="https://example.com/github"
           rel="noopener noreferrer"
           target="_blank"
@@ -179,7 +179,7 @@ exports[`renders custom copyright notice and  GitHub and Twitter links 1`] = `
         className="nav-item"
       >
         <a
-          className="nav-link p-2"
+          className="nav-link py-2 pl-1 pl-sm-2 pr-0"
           href="https://example.com/twitter"
           rel="noopener noreferrer"
           target="_blank"
@@ -207,7 +207,7 @@ exports[`renders with copyright text and default GitHub and Twitter links 1`] = 
     <span
       className="navbar-text"
     >
-      © The Perseids Project 2020
+      The Perseids Project
     </span>
     <ul
       className="navbar-nav my-2 my-lg-02 flex-row"
@@ -216,7 +216,7 @@ exports[`renders with copyright text and default GitHub and Twitter links 1`] = 
         className="nav-item"
       >
         <a
-          className="nav-link p-2"
+          className="nav-link py-2 pl-1 pl-sm-2 pr-1 pr-sm-2"
           href="https://github.com/perseids-project"
           rel="noopener noreferrer"
           target="_blank"
@@ -233,7 +233,7 @@ exports[`renders with copyright text and default GitHub and Twitter links 1`] = 
         className="nav-item"
       >
         <a
-          className="nav-link p-2"
+          className="nav-link py-2 pl-1 pl-sm-2 pr-0"
           href="https://twitter.com/PerseidsProject"
           rel="noopener noreferrer"
           target="_blank"
