@@ -1,32 +1,27 @@
 {
   "files": {
     "main.css": "/perseids-react-components/static/css/main.955042ff.chunk.css",
-    "main.js": "/perseids-react-components/static/js/main.939117f7.chunk.js",
-    "main.js.map": "/perseids-react-components/static/js/main.939117f7.chunk.js.map",
+    "main.js": "/perseids-react-components/static/js/main.c77ab93a.chunk.js",
+    "main.js.map": "/perseids-react-components/static/js/main.c77ab93a.chunk.js.map",
     "runtime-main.js": "/perseids-react-components/static/js/runtime-main.4d70859a.js",
     "runtime-main.js.map": "/perseids-react-components/static/js/runtime-main.4d70859a.js.map",
     "static/css/2.0e1a4c73.chunk.css": "/perseids-react-components/static/css/2.0e1a4c73.chunk.css",
-    "static/js/2.65576a2e.chunk.js": "/perseids-react-components/static/js/2.65576a2e.chunk.js",
-    "static/js/2.65576a2e.chunk.js.map": "/perseids-react-components/static/js/2.65576a2e.chunk.js.map",
+    "static/js/2.21686b32.chunk.js": "/perseids-react-components/static/js/2.21686b32.chunk.js",
+    "static/js/2.21686b32.chunk.js.map": "/perseids-react-components/static/js/2.21686b32.chunk.js.map",
     "index.html": "/perseids-react-components/index.html",
     "service-worker.js": "/perseids-react-components/service-worker.js",
     "service-worker.js.map": "/perseids-react-components/service-worker.js.map",
     "static/css/2.0e1a4c73.chunk.css.map": "/perseids-react-components/static/css/2.0e1a4c73.chunk.css.map",
     "static/css/main.955042ff.chunk.css.map": "/perseids-react-components/static/css/main.955042ff.chunk.css.map",
-    "static/js/2.65576a2e.chunk.js.LICENSE.txt": "/perseids-react-components/static/js/2.65576a2e.chunk.js.LICENSE.txt",
-    "static/media/doi.6fdc659c.svg": "/perseids-react-components/static/media/doi.6fdc659c.svg",
-    "static/media/mark-github-16.svg": "/perseids-react-components/static/media/mark-github-16.0c43ec4b.svg",
-    "static/media/perseids-logo-transparent.9e212369.png": "/perseids-react-components/static/media/perseids-logo-transparent.9e212369.png",
-    "static/media/report-16.svg": "/perseids-react-components/static/media/report-16.857defe9.svg",
-    "static/media/twitter.b7fcab8a.svg": "/perseids-react-components/static/media/twitter.b7fcab8a.svg",
+    "static/js/2.21686b32.chunk.js.LICENSE.txt": "/perseids-react-components/static/js/2.21686b32.chunk.js.LICENSE.txt",
     "workbox-dce9cbc5.js": "/perseids-react-components/workbox-dce9cbc5.js",
     "workbox-dce9cbc5.js.map": "/perseids-react-components/workbox-dce9cbc5.js.map"
   },
   "entrypoints": [
     "static/js/runtime-main.4d70859a.js",
     "static/css/2.0e1a4c73.chunk.css",
-    "static/js/2.65576a2e.chunk.js",
+    "static/js/2.21686b32.chunk.js",
     "static/css/main.955042ff.chunk.css",
-    "static/js/main.939117f7.chunk.js"
+    "static/js/main.c77ab93a.chunk.js"
   ]
 }
