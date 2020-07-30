@@ -49,6 +49,15 @@ it('can render DOI link', () => {
   expect(tree).toMatchSnapshot();
 });
 
+it('converts bare DOIs into link', () => {
+  const component = (
+    <PerseidsFooter github="" twitter="" doi="whatever/zenodo.number" />
+  );
+  const tree = renderer.create(component).toJSON();
+
+  expect(tree).toMatchSnapshot();
+});
+
 it('can render children between copyright notice and icons', () => {
   const component = (
     <PerseidsFooter>

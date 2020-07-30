@@ -18,13 +18,21 @@ const iconClass = (hasFollower) => (
   `nav-link py-2 pl-1 pl-sm-2 ${hasFollower ? 'pr-1 pr-sm-2' : 'pr-0'}`
 );
 
-const renderDoi = (href, hasFollower) => (
-  <li className="nav-item">
-    <a className={iconClass(hasFollower)} href={href} target="_blank" rel="noopener noreferrer">
-      <img className="perseids-react-components--doi" src={doiIcon} title="Digital Object Identifier" alt="DOI Icon" />
-    </a>
-  </li>
-);
+const renderDoi = (doiOrHref, hasFollower) => {
+  let href = doiOrHref;
+
+  if (!/^https?:/.test(doiOrHref)) {
+    href = `https://dx.doi.org/${doiOrHref}`;
+  }
+
+  return (
+    <li className="nav-item">
+      <a className={iconClass(hasFollower)} href={href} target="_blank" rel="noopener noreferrer">
+        <img className="perseids-react-components--doi" src={doiIcon} title="Digital Object Identifier" alt="DOI Icon" />
+      </a>
+    </li>
+  );
+};
 
 const renderOcticon = (href, img, title, alt, hasFollower) => (
   <li className="nav-item">

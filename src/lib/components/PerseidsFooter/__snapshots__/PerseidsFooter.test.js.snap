@@ -143,6 +143,43 @@ exports[`can render report link 1`] = `
 </footer>
 `;
 
+exports[`converts bare DOIs into link 1`] = `
+<footer
+  className="footer perseids-react-components--footer"
+>
+  <nav
+    className="navbar navbar-light bg-light py-0 perseids-react-components--footer-nav"
+  >
+    <span
+      className="navbar-text"
+    >
+      The Perseids Project
+    </span>
+    <ul
+      className="navbar-nav my-2 my-lg-02 flex-row"
+    >
+      <li
+        className="nav-item"
+      >
+        <a
+          className="nav-link py-2 pl-1 pl-sm-2 pr-0"
+          href="https://dx.doi.org/whatever/zenodo.number"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <img
+            alt="DOI Icon"
+            className="perseids-react-components--doi"
+            src="doi.svg"
+            title="Digital Object Identifier"
+          />
+        </a>
+      </li>
+    </ul>
+  </nav>
+</footer>
+`;
+
 exports[`renders custom copyright notice and  GitHub and Twitter links 1`] = `
 <footer
   className="footer perseids-react-components--footer"
