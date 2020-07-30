@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 import './PerseidsFooter.css';
 
-import githubIcon from '@primer/octicons/build/svg/mark-github.svg';
-import reportIcon from '@primer/octicons/build/svg/report.svg';
+import githubIcon from '@primer/octicons/build/svg/mark-github-16.svg';
+import reportIcon from '@primer/octicons/build/svg/report-16.svg';
 import twitterIcon from './twitter.svg';
 import doiIcon from './doi.svg';
 

@@ -79,7 +79,7 @@ exports[`can render children between copyright notice and icons 1`] = `
           <img
             alt="GitHub Icon"
             className="perseids-react-components--octicon"
-            src="mark-github.svg"
+            src="mark-github-16.svg"
             title="View Source on Github"
           />
         </a>
@@ -133,7 +133,7 @@ exports[`can render report link 1`] = `
           <img
             alt="Report Icon"
             className="perseids-react-components--octicon"
-            src="report.svg"
+            src="report-16.svg"
             title="Report Issue"
           />
         </a>
@@ -170,7 +170,7 @@ exports[`renders custom copyright notice and  GitHub and Twitter links 1`] = `
           <img
             alt="GitHub Icon"
             className="perseids-react-components--octicon"
-            src="mark-github.svg"
+            src="mark-github-16.svg"
             title="View Source on Github"
           />
         </a>
@@ -224,7 +224,7 @@ exports[`renders with copyright text and default GitHub and Twitter links 1`] = 
           <img
             alt="GitHub Icon"
             className="perseids-react-components--octicon"
-            src="mark-github.svg"
+            src="mark-github-16.svg"
             title="View Source on Github"
           />
         </a>
