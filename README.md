@@ -139,3 +139,4 @@ To upgrade to the latest version of `create-react-library`:
 * Run `yarn add --dev bootstrap prop-types eslint-config-airbnb eslint-plugin-jest react-test-renderer`
 * All of the files in `./scripts` should be replaced with new versions in `create-react-library`.
 * All of the files in `./config` should be replaced with new versions in `create-react-library`.
+* Make script changes in the production Webpack config in accordance with [99542871138040822d9be9cd4ebf1a9ff5b29384](https://github.com/perseids-tools/perseids-react-components/commit/99542871138040822d9be9cd4ebf1a9ff5b29384)

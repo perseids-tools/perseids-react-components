@@ -38,7 +38,7 @@ const shouldUseSourceMap = process.env.GENERATE_SOURCEMAP !== 'false';
 const shouldInlineRuntimeChunk = process.env.INLINE_RUNTIME_CHUNK !== 'false';
 
 const imageInlineSizeLimit = parseInt(
-  process.env.IMAGE_INLINE_SIZE_LIMIT || '10000'
+  process.env.IMAGE_INLINE_SIZE_LIMIT || '50000'
 );
 
 // Check if TypeScript is setup
@@ -374,11 +374,11 @@ module.exports = function(webpackEnv) {
             // smaller than specified limit in bytes as data URLs to avoid requests.
             // A missing `test` is equivalent to a match.
             {
-              test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
+              test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/, /\.svg$/],
               loader: require.resolve('url-loader'),
               options: {
                 limit: imageInlineSizeLimit,
-                name: 'static/media/[name].[hash:8].[ext]',
+                name: 'media/[name].[hash:8].[ext]',
               },
             },
             // Process application JS with Babel.
@@ -598,8 +598,8 @@ module.exports = function(webpackEnv) {
         new MiniCssExtractPlugin({
           // Options similar to the same options in webpackOptions.output
           // both options are optional
-          filename: isEnvProduction ? 'index.css' : 'static/css/[name].[contenthash:8].css', // CRL
-          chunkFilename: isEnvProduction ? '[name].[contenthash:8].chunk.css' : 'static/css/[name].[contenthash:8].chunk.css', // CRL
+          filename: isEnvProduction ? 'css/index.css' : 'static/css/[name].[contenthash:8].css', // CRL
+          chunkFilename: isEnvProduction ? 'css/[name].[contenthash:8].chunk.css' : 'static/css/[name].[contenthash:8].chunk.css', // CRL
         }),
       // Generate an asset manifest file with the following content:
       // - "files" key: Mapping of all asset filenames to their corresponding
