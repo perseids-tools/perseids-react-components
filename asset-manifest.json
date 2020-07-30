@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/perseids-react-components/static/css/main.955042ff.chunk.css",
-    "main.js": "/perseids-react-components/static/js/main.e3c07319.chunk.js",
-    "main.js.map": "/perseids-react-components/static/js/main.e3c07319.chunk.js.map",
+    "main.js": "/perseids-react-components/static/js/main.939117f7.chunk.js",
+    "main.js.map": "/perseids-react-components/static/js/main.939117f7.chunk.js.map",
     "runtime-main.js": "/perseids-react-components/static/js/runtime-main.4d70859a.js",
     "runtime-main.js.map": "/perseids-react-components/static/js/runtime-main.4d70859a.js.map",
     "static/css/2.0e1a4c73.chunk.css": "/perseids-react-components/static/css/2.0e1a4c73.chunk.css",
@@ -27,6 +27,6 @@
     "static/css/2.0e1a4c73.chunk.css",
     "static/js/2.65576a2e.chunk.js",
     "static/css/main.955042ff.chunk.css",
-    "static/js/main.e3c07319.chunk.js"
+    "static/js/main.939117f7.chunk.js"
   ]
 }
