@@ -27,3 +27,4 @@ demo
 .eslintrc.json
 .tool-versions
 yarn.lock
+/.github
