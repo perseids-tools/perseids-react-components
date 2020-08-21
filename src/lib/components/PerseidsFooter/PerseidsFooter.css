@@ -13,6 +13,7 @@ html {
 
 .perseids-react-components--footer-nav {
   height: 100%;
+  flex-wrap: nowrap;
 }
 
 .perseids-react-components--doi {
@@ -24,5 +25,5 @@ html {
 }
 
 .perseids-react-components--octicon {
-  height: 24px;
+  height: 30px;
 }
