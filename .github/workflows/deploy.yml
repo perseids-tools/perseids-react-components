@@ -34,3 +34,4 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
           BRANCH: gh-pages
           FOLDER: demo
+          CLEAN: true
